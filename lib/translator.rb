@@ -12,7 +12,7 @@ end
 
 
 def get_japanese_emoticon(file_path, english_emoticon)
-  emojis = load_library
+  emojis = load_library(file_path)
     emojis["get_emoticon"].each do |english_emoji, japanese_emoji|
       if english_emoticon == english_emoji
       return japanese_emoji
