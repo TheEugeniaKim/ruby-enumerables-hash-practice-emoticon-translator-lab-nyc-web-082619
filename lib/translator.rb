@@ -11,8 +11,8 @@ def load_library(emoticons)
 end
 
 
-def get_japanese_emoticon('lib/emoticons.yml', emoticon)
-  emoji = def load_library('lib/emoticons.yml')["get_emoticon"][emoticon]
+def get_japanese_emoticon(file_path, emoticon)
+  emoji = def load_library(file_path)["get_emoticon"][emoticon]
     if emoji
       return emoji
     end
