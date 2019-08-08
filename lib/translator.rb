@@ -13,9 +13,9 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   file_path = 'lib/emoticons.yml'
-  library = load_library(emoticon)
+  library = load_library(file_path)
     if library
-      return library["get_japanese_emoticon"].fetch(emoticon)
+      return library["get_japanese_emoticon"]
     end
     "Sorry, that emoticon was not found"
   end
