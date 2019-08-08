@@ -23,7 +23,7 @@ def get_japanese_emoticon(file_path, english_emoticon)
 
 
 def get_english_meaning(file_path, emoticon)
-  meaning == load_library(file_path)["get_meaning"][emoticon]
+  meaning = load_library(file_path)["get_meaning"][emoticon]
   if meaning
     return meaning
   else
