@@ -12,7 +12,7 @@ end
 
 
 def get_japanese_emoticon(file_path, emoticon)
-  emoji = def load_library(file_path)
+  emoji = def load_library(file_path)["get_emoticon"][emoticon]
     if emoji
       return emoji
     end
