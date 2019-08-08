@@ -23,14 +23,12 @@ def get_japanese_emoticon(file_path, english_emoticon)
 
 
 def get_english_meaning(file_path, japanese_emoticon)
-  meaning = load_library
-  emojis["get_meaning"].each do |meaning, emoticon|
-    if japanese_emoticon == emoticon
-      return meaning
-      "Sorry"
-    end
-  end
-  
+  meaning = load_library(file_path)["get_emoticon"][japanese_emoticon]
+  if meaning
+    return meaning
+  else
+    return "Sorry "
+ end
 end
 
 
