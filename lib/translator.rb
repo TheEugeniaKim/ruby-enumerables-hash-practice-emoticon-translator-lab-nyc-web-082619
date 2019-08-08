@@ -20,6 +20,7 @@ def get_japanese_emoticon('lib/emoticons.yml', emoticon)
   end
 
 
+
 def get_english_meaning
   
   
