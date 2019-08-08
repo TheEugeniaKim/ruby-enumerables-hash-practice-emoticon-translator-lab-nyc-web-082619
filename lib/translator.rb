@@ -17,6 +17,7 @@ def get_japanese_emoticon(file_path, english_emoticon)
     if emojis = nil 
       "Sorry, that emoticon was not found"
     end
+  emojis
 end
 
 
