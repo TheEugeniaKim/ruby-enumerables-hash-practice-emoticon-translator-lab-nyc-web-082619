@@ -12,8 +12,8 @@ end
 
 
 def get_japanese_emoticon('lib/emoticon.yml', emoticon)
-  library = load_library('lib/emoticon.yml')["get_meaning"][emoticon]
-    if emotion 
+  library = load_library('lib/emoticon.yml')
+    if library
       return library["get_japanese_emoticon"].fetch(emoticon)
     end
     "Sorry, that emoticon was not found"
