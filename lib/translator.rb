@@ -15,13 +15,9 @@ def get_japanese_emoticon(file_path, english_emoticon)
   apology = "Sorry, that emoticon was not found"
   emojis = load_library(file_path)
     emojis["get_emoticon"].each do |english_emoji, japanese_emoji|
-      return japanese_emoji
       if english_emoticon == english_emoji
-    end
-     apology
-  end
-end
-  
+        return japanese_emoji
+    
 
 
 # def get_english_meaning(file_path, japanese_emoticon)
