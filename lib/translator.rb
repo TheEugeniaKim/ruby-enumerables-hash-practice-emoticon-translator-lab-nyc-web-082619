@@ -12,7 +12,7 @@ end
 
 
 def get_japanese_emoticon('lib/emoticons.yml', emoticon)
-  library = def load_library(emoticons)
+  library = def load_library(emoticon)
     if library
       return library["get_japanese_emoticon"]
     end
